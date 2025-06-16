@@ -3,7 +3,7 @@ Qorenz Labs Company Landing Page
 
 ## Running Locally
 
-A small Python script is included to serve the site.
+A small Python script is included to serve the site. No Node or npm is required.
 Run the server and open your browser at the displayed address:
 
 ```bash
