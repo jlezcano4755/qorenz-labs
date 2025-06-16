@@ -1805,6 +1805,11 @@ a:hover {
 .what-we-do .block {
   max-width: 300px;
 }
+.what-we-do .product-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
 .trust {
   padding: 40px 20px;
   text-align: center;
