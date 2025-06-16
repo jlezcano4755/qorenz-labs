@@ -1,244 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Qorenz Labs</title>
-    <meta name="title" content="Qorenz Labs">
-    <meta name="description" content="A minimal email client for inbox zero enthusiasts.">
-    <meta name="keywords" content="tiny, mail, client, gmail, icloud, minimal, superhuman">
-    <meta name="author" content="@ijazulrehman">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qorenz.com/">
-    <meta property="og:title" content="Qorenz Labs">
-    <meta property="og:description" content="A minimal email client for inbox zero enthusiasts.">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://qorenz.com/">
-    <meta property="twitter:title" content="Qorenz Labs">
-    <meta property="twitter:description" content="A minimal email client for inbox zero enthusiasts.">
-    <link rel="icon" type="image/svg+xml" href="images/logo-qorenz.svg">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qorenz Labs</title>
+  <meta name="description" content="AI software studio and analytics consulting">
+  <link rel="icon" type="image/svg+xml" href="images/logo-qorenz.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
-  <div class="modal">
-  <button type="button" class="modal-close modal-toggle"><i class="icon" data-feather="x"></i><span class="hide-mobile">ESC</span></button>
-  <div class="modal-content">
-    <div class="success">
-      <a href="index.html" class="logo"><img src="images/logo-qorenz.svg" alt="logo"/></a>
-      <h2 class="modal-title first-name" id="title-name"></h2>
-      <p>You're on the list! We'll be in touch.</p>
-      <a href="index.html" class="button">Back home</a>
-    </div>
-    <div class="form-content">
-      <a href="index.html" class="logo"><img src="images/logo-qorenz.svg" alt="logo"/></a>
-      <h2 class="modal-title">Join the Qorenz Labs Waitlist</h2>
-      <p class="modal-subtitle">We're still in early stages, and we'll let you know once we're ready for more beta testers.</p>
-      <form class='form' name='qorenzForm' method='POST'><input type='hidden' name='form-name' value='qorenzForm' />
-        <div class="group">
-          <input type="text" id="firstName" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
-          <label for="first-name">First name</label>
-          <span class="border"></span>
-        </div>
-        <div class="group">
-          <input type="email" name="email" placeholder="&nbsp;" autocomplete="off" required>
-          <label for="email">Email</label>
-          <span class="border"></span>
-        </div>
-        <button type="submit" class="button">Join the waitlist</button>
-      </form>
+  <div id="modal" class="modal" aria-hidden="true">
+    <button type="button" id="modal-close" class="modal-close"><i data-feather="x"></i><span class="hide-mobile">ESC</span></button>
+    <div class="modal-content">
+      <div class="success">
+        <a href="index.html" class="logo"><img src="images/logo-qorenz.svg" alt="logo"></a>
+        <h2 class="modal-title first-name" id="title-name"></h2>
+        <p>Thanks! We'll get back to you within 1 business day.</p>
+        <a href="index.html" class="button">Back home</a>
+      </div>
+      <div class="form-content">
+        <a href="index.html" class="logo"><img src="images/logo-qorenz.svg" alt="logo"></a>
+        <h2 class="modal-title">Request Early Access</h2>
+        <p class="modal-subtitle">We're still in early stages and will contact you as soon as the beta opens.</p>
+        <form class="form" action="https://formspree.io/f/xyz" method="POST">
+          <div class="group">
+            <input type="text" id="firstName" name="name" placeholder=" " autocomplete="off" required>
+            <label for="firstName">Name</label>
+            <span class="border"></span>
+          </div>
+          <div class="group">
+            <input type="email" id="email" name="email" placeholder=" " autocomplete="off" required>
+            <label for="email">Email</label>
+            <span class="border"></span>
+          </div>
+          <div class="group">
+            <input type="text" id="org" name="organization" placeholder=" " autocomplete="off" required>
+            <label for="org">Organization</label>
+            <span class="border"></span>
+          </div>
+          <div class="group">
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder=" " autocomplete="tel" required>
+            <label for="whatsapp">WhatsApp number</label>
+            <span class="border"></span>
+          </div>
+          <p class="consent">By submitting, you agree to receive WhatsApp messages from Qorenz Labs. Reply STOP to opt-out.</p>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
   <div class="content">
-    <a href="index.html" class="logo"><img src="images/logo-qorenz.svg" alt="logo"/></a>
-    <div class="hero">
+    <a href="index.html" class="logo"><img src="images/logo-qorenz.svg" alt="logo"></a>
+    <section class="hero">
       <h1 class="title">AI Insights. Real-Time.</h1>
-      <h1 class="title shift clip">
-        <span class="word-shift">
-          <b class="is-visible">schools&nbsp;</b>
-          <b>parents</b>
-          <b>hospitals</b>
-          <b>plant managers</b>
-        </span>
-      </h1>
-      <button class="button modal-toggle">Join the waitlist</button>
-        <p class="subtitle">Available soon for Mac <img src="images/logo-apple.svg" alt="apple"/></p>
-    <div class="screen-wrapper">
-      <img src="https://via.placeholder.com/800x480.png?text=Screen" class="screen" alt="screen"/>
-    </div>
-    <section class="section section-features">
-      <h2 class="title">An intentionally dead simple email experience</h1>
-      <div class="features">
-        <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay"/>
-        <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay"/>
-        <img src="images/overlay-top.svg" class="overlay-top show-mobile" alt="overlay"/>
-        <img src="images/overlay-bottom.svg" class="overlay-bottom show-mobile" alt="overlay"/>
-        <div class="row donts">
-          <div class="feature"><i class="icon" data-feather="x"></i> No integrations</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No templates</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No autoresponders</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No reminders</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No rules</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No filters</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No A.I.</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No snoozing</div>
-          <!-- Repeat-->
-          <div class="feature"><i class="icon" data-feather="x"></i> No integrations</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No templates</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No autoresponders</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No reminders</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No rules</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No filters</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No A.I.</div>
-          <div class="feature"><i class="icon" data-feather="x"></i> No snoozing</div>
-        </div>
-        <div class="row dos">
-          <div class="feature"><i class="icon" data-feather="check"></i>Shortcuts</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Unified inbox</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Dark mode</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Lightning fast</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Beautiful imagery</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Simple UI</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Interactive</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Themes</div>
-          <!-- Repeat-->
-          <div class="feature"><i class="icon" data-feather="check"></i>Shortcuts</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Unified inbox</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Dark mode</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Lightning fast</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Beautiful imagery</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Simple UI</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Interactive</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Themes</div>
-        </div>
-      </div>
-      <!-- <p>If you’re looking for an email client with more features, try <a href="">these</a>.</p> -->
+      <h1 class="title shift clip"><span class="word-shift"><b class="is-visible">schools&nbsp;</b><b>parents</b><b>hospitals</b><b>plant managers</b></span></h1>
+      <p class="tagline">Impulsados por datos, medidos por impacto.</p>
+      <p class="subheadline">Qorenz Labs builds Vikt—an AI WhatsApp assistant for schools—plus analytics for industry and healthcare.</p>
+      <button class="button" id="cta-btn">Request Early Access</button>
     </section>
-    <section class="section section-providers">
-      <h2 class="title">Use with any and all of your email providers</h2>
-      <div class="cards">
-        <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay"/>
-        <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay"/>
-        <div class="slider">
-          <div class="slide"><img src="images/card-icloud.svg" alt="icloud"/></div>
-          <div class="slide"><img src="images/card-gmail.svg" alt="gmail"/></div>
-          <div class="slide"><img src="images/card-outlook.svg" alt="outlook"/></div>
-          <div class="slide"><img src="images/card-yahoo.svg" alt="yahooe"/></div>
-          <div class="slide"><img src="images/card-pop3.svg" alt="pop3"/></div>
-          <div class="slide"><img src="images/card-imap.svg" alt="imap"/></div>
+    <section class="what-we-do">
+      <div class="grid">
+        <div class="block">
+          <h3>Vikt</h3>
+          <p>WhatsApp assistant that streams attendance & grade alerts and lets parents respond in real time.</p>
+        </div>
+        <div class="block">
+          <h3>Industrial IoT Analytics</h3>
+          <p>Predict equipment failures and slash unplanned downtime with machine-learning tuned for industrial ops.</p>
+        </div>
+        <div class="block">
+          <h3>Healthcare Analytics</h3>
+          <p>Transform EHR silos into staffing, supply, and quality-of-care forecasts.</p>
         </div>
       </div>
     </section>
-    <section class="section imagery">
-      <h2 class="title">Celebrate Inbox Zero with beautiful imagery</h2>
-      <img src="images/overlay-bottom.svg" class="overlay-bottom hide-mobile" alt="overlay"/>
-      <div class="zero-slider">
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=Zero+1" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=Zero+2" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=Zero+3" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=Zero+4" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=Zero+5" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=Zero+6" alt="inboxzero"/></div>
+    <section class="trust">
+      <div class="slider">
+        <div class="badge"><img src="images/badge-whatsapp.svg" alt="WhatsApp Business badge"><p>WhatsApp Business ✔</p></div>
+        <div class="badge"><img src="images/badge-law81.svg" alt="Law 81 badge"><p>Law 81 🇵🇦</p></div>
+        <div class="badge"><img src="images/badge-soc2.svg" alt="SOC 2 badge"><p>SOC 2 🛡</p></div>
+        <div class="badge"><img src="images/badge-aws.svg" alt="AWS Partner badge"><p>AWS Partner</p></div>
       </div>
     </section>
-    <section class="section cta">
-      <div class="cta-content">
-        <h1 class="title">Join the beta, and start loving email again.</h1>
-        <button class="button white modal-toggle">Join the waitlist</button>
-        <p class="subtitle">Available soon for Mac <img src="images/logo-apple.svg" alt="apple"/></p>
+    <section class="founders">
+      <div class="founder">
+        <img src="https://via.placeholder.com/140" alt="Jorge Lezcano portrait">
+        <h4>Jorge Lezcano</h4>
+        <p>Machine learning leader with a decade designing analytics for healthcare, mining and IIoT. Drives technical direction at Qorenz.</p>
       </div>
-      <div class="zero-slider">
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=CTA+1" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=CTA+2" alt="inboxzero"/></div>
-        <div class="slide"><img src="https://via.placeholder.com/600x400.png?text=CTA+3" alt="inboxzero"/></div>
+      <div class="founder">
+        <img src="https://via.placeholder.com/140" alt="Amalfi Lezcano portrait">
+        <h4>Amalfi Lezcano</h4>
+        <p>Educator with over twenty years in K‑12 and higher ed. Shapes Vikt so teachers and parents communicate effortlessly.</p>
       </div>
     </section>
     <footer class="footer">
-      <p>&copy; Qorenz Labs</p>
+      <p>support@qorenz.com • +507‑6655‑4337 • Ciudad del Saber, Panamá</p>
+      <p><a href="legal/privacy.html">Privacy</a> | <a href="legal/terms.html">Terms</a> | <a href="index_es.html">ES</a> | <a href="index.html">EN</a></p>
+      <p>Currently in pilot phase; no paying customers yet.</p>
     </footer>
-    </div>
   </div>
-  <script src="./js/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/scripts.min.js"></script>
-<script>
-
-  // Close modal on escape key
-  $(document).keyup(function(e) {
-    if (e.key === "Escape") {
-      $('.modal').removeClass('modal-show');
-      $('.content').removeClass('content-blurred');
-      $('body').removeClass('no-scroll');
-    }
-  });
-
-  $(function(){
-
-    // Provider card slider
-    $('.slider').flickity({
-      pauseAutoPlayOnHover: false,
-      prevNextButtons: false,
-      cellAlign: 'center',
-      draggable:  false,
-      freeScroll: false,
-      wrapAround: true,
-      pageDots: false,
-      autoPlay: 3000,
-    });
-
-    // Imbox zero slider
-    $('.zero-slider').flickity({
-      pauseAutoPlayOnHover: false,
-      prevNextButtons: false,
-      cellAlign: 'center',
-      freeScroll: false,
-      wrapAround: false,
-      draggable: false,
-      pageDots: false,
-      autoPlay: 3000,
-      fade: true,
-    });
-
-    // Open & close modal
-    $('.modal-toggle').click(function(){
-      $('.modal').toggleClass('modal-show');
-      $('.content').toggleClass('content-blurred');
-      $('body').toggleClass('no-scroll');
-    });
-
-    // Reserve username form
-    $(".form").submit(function(e) {
-      e.preventDefault();
-      var $form = $(this);
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        $('.form-content').addClass('form-content-hide');
-        $('.success').addClass('success-show');
-      });
-    });
-
-    // Save user's first name
-    $(".form").submit(function(e) {
-      e.preventDefault();
-      var value = $("#firstName").val();
-      $('.first-name').text("Thank you," + " " + value + "!");
-    });
-
-    // Feather icons
-    feather.replace()
-
-    // ScrollReveal
-    ScrollReveal().reveal('.hero, .title, .screen, .features, .cards, .zero-slider', {
-      distance: '40px',
-      duration: 2000,
-      mobile: false,
-      reset: false,
-      opacity: 0
-    });
-
-  });
-</script>
-
+  <script src="js/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>feather.replace();</script>
 </body>
-
 </html>

@@ -1781,3 +1781,56 @@ a:hover {
     z-index: 1;
 }
 
+
+/* Custom styles for Qorenz landing page */
+.hero .tagline {
+  font-style: italic;
+  margin-top: 10px;
+}
+.hero .subheadline {
+  margin-top: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+.what-we-do {
+  padding: 60px 20px;
+  text-align: center;
+}
+.what-we-do .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.what-we-do .block {
+  max-width: 300px;
+}
+.trust {
+  padding: 40px 20px;
+  text-align: center;
+}
+.trust .slider {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.trust .badge p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.founders {
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+}
+.founder img {
+  border-radius: 50%;
+}
+.consent {
+  font-size: 12px;
+  margin: 10px 0;
+}
