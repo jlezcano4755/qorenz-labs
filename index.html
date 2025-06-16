@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qorenz Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.hero h1 {
+  font-size: 2rem;
+}
+
+.cta-btn:focus {
+  outline: 2px dashed #00B4D8;
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="img/logo-qorenz.svg" alt="Qorenz Labs logo" width="120">
+  <p>Driven by data, measured by impact.</p>
+  <h1>AI Insights. Real-Time.</h1>
+  <p id="rotate">for <span class="clip">schools</span></p>
+  <button id="cta-btn" class="cta-btn">Request Early Access</button>
+  <p>Qorenz Labs builds Vikt—an AI WhatsApp assistant for schools—plus analytics for industry and healthcare.</p>
+</header>
+
+<section class="grid">
+  <div class="grid-item reveal">
+    <h2>Vikt</h2>
+    <p>WhatsApp assistant that streams attendance &amp; grade alerts and lets parents respond in real time.</p>
+  </div>
+  <div class="grid-item reveal">
+    <h2>Industrial IoT Analytics</h2>
+    <p>Predict equipment failures and slash unplanned downtime with machine-learning tuned for industrial ops.</p>
+  </div>
+  <div class="grid-item reveal">
+    <h2>Healthcare Analytics</h2>
+    <p>Transform EHR silos into staffing, supply, and quality-of-care forecasts.</p>
+  </div>
+</section>
+
+<section class="slider" aria-label="Compliance and Trust">
+  <div class="carousel-cell"><img src="img/badge-whatsapp.svg" alt="WhatsApp Business badge"><p>WhatsApp Business</p></div>
+  <div class="carousel-cell"><img src="img/badge-law81.svg" alt="Law 81 compliance badge"><p>Law 81 Panama</p></div>
+  <div class="carousel-cell"><img src="img/badge-soc2.svg" alt="SOC2 readiness badge"><p>SOC 2 Ready</p></div>
+  <div class="carousel-cell"><img src="img/badge-aws.svg" alt="AWS Partner badge"><p>AWS Partner</p></div>
+</section>
+
+<section class="founders">
+  <div class="founder reveal">
+    <div class="founder-img" aria-label="Jorge Lezcano" role="img"></div>
+    <p>Jorge Lezcano has 10 years of machine learning leadership across healthcare, mining, and industrial IoT. He guides product strategy and analytics design.</p>
+  </div>
+  <div class="founder reveal">
+    <div class="founder-img" aria-label="Amalfi Lezcano" role="img"></div>
+    <p>Amalfi Lezcano brings 20 years of pedagogy and school administration experience. She ensures Vikt aligns with teacher workflows and parent needs.</p>
+  </div>
+</section>
+
+<div id="modal" aria-hidden="true" style="display:none;">
+  <form action="https://formspree.io/f/xyz" method="POST">
+    <label>Name<input name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Organization<input name="org"></label>
+    <label>WhatsApp<input name="whatsapp" type="tel" pattern="\+?[0-9]{10,15}" required></label>
+    <p>By submitting, you agree to receive WhatsApp messages from Qorenz Labs. Reply STOP to opt-out.</p>
+    <button type="submit" class="cta-btn">Submit</button>
+    <button type="button" id="modal-close">Close</button>
+  </form>
+</div>
+
+<footer>
+  <p>Ciudad del Saber, Panamá | +507-6655-4337 | <a href="mailto:support@qorenz.com">support@qorenz.com</a></p>
+  <p><a href="legal/privacy.html">Privacy</a> | <a href="legal/terms.html">Terms</a> | <a href="index_es.html">ES</a></p>
+  <p>Currently in pilot phase; no paying customers yet.</p>
+</footer>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/flickity.min.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

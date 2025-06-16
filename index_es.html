@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qorenz Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.hero h1 {
+  font-size: 2rem;
+}
+
+.cta-btn:focus {
+  outline: 2px dashed #00B4D8;
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="img/logo-qorenz.svg" alt="Logo de Qorenz Labs" width="120">
+  <p>Impulsados por datos, medidos por impacto.</p>
+  <h1>AI Insights. Real-Time.</h1>
+  <p id="rotate">para <span class="clip">escuelas</span></p>
+  <button id="cta-btn" class="cta-btn">Solicitar acceso temprano</button>
+  <p>Qorenz Labs desarrolla Vikt, un asistente de WhatsApp para escuelas, más analítica para industria y salud.</p>
+</header>
+
+<section class="grid">
+  <div class="grid-item reveal">
+    <h2>Vikt</h2>
+    <p>Asistente por WhatsApp que envía alertas de asistencia y calificaciones, permitiendo a los padres responder en tiempo real.</p>
+  </div>
+  <div class="grid-item reveal">
+    <h2>Analítica Industrial IoT</h2>
+    <p>Predice fallas de equipos y reduce paros imprevistos con aprendizaje automático adaptado a operaciones industriales.</p>
+  </div>
+  <div class="grid-item reveal">
+    <h2>Analítica de Salud</h2>
+    <p>Convierte silos de historias clínicas en pronósticos de personal, suministros y calidad de atención.</p>
+  </div>
+</section>
+
+<section class="slider" aria-label="Cumplimiento y confianza">
+  <div class="carousel-cell"><img src="img/badge-whatsapp.svg" alt="Insignia de WhatsApp Business"><p>WhatsApp Business</p></div>
+  <div class="carousel-cell"><img src="img/badge-law81.svg" alt="Insignia de cumplimiento Ley 81"><p>Ley 81 Panamá</p></div>
+  <div class="carousel-cell"><img src="img/badge-soc2.svg" alt="Insignia SOC2"><p>SOC 2 Ready</p></div>
+  <div class="carousel-cell"><img src="img/badge-aws.svg" alt="Insignia de socio AWS"><p>Socio AWS</p></div>
+</section>
+
+<section class="founders">
+  <div class="founder reveal">
+    <div class="founder-img" aria-label="Jorge Lezcano" role="img"></div>
+    <p>Jorge Lezcano cuenta con 10 años liderando proyectos de aprendizaje automático en salud, minería y IIoT. Dirige la estrategia y el diseño analítico.</p>
+  </div>
+  <div class="founder reveal">
+    <div class="founder-img" aria-label="Amalfi Lezcano" role="img"></div>
+    <p>Amalfi Lezcano aporta 20 años de pedagogía y gestión escolar. Asegura que Vikt se integre a los flujos de trabajo docentes y a las necesidades de padres.</p>
+  </div>
+</section>
+
+<div id="modal" aria-hidden="true" style="display:none;">
+  <form action="https://formspree.io/f/xyz" method="POST">
+    <label>Nombre<input name="name" required></label>
+    <label>Correo electrónico<input type="email" name="email" required></label>
+    <label>Organización<input name="org"></label>
+    <label>Número de WhatsApp<input name="whatsapp" type="tel" pattern="\+?[0-9]{10,15}" required></label>
+    <p>Al enviar, aceptas recibir mensajes de WhatsApp de Qorenz Labs. Responde STOP para cancelar.</p>
+    <button type="submit" class="cta-btn">Enviar</button>
+    <button type="button" id="modal-close">Cerrar</button>
+  </form>
+</div>
+
+<footer>
+  <p>Ciudad del Saber, Panamá | +507-6655-4337 | <a href="mailto:support@qorenz.com">support@qorenz.com</a></p>
+  <p><a href="legal/privacy.html">Privacidad</a> | <a href="legal/terms.html">Términos</a> | <a href="index.html">EN</a></p>
+  <p>Actualmente en fase piloto; aún sin clientes de pago.</p>
+</footer>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/flickity.min.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
