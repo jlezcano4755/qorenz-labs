@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 def main():
-    parser = argparse.ArgumentParser(description="Run a simple HTTP server for the site.")
+    parser = argparse.ArgumentParser(description="Run a simple HTTP server for the site (no Node required).")
     parser.add_argument("--port", "-p", type=int, default=8000, help="Port to serve on")
     args = parser.parse_args()
 
